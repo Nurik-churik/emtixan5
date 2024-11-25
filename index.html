@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //tapsyrma1
+// function kkk() {
+   
+//     const birinshiSan = prompt("Бірінші санды енгізіңіз:");
+//     const ekinshiSan = prompt("Екінші санды енгізіңіз:");
+    
+//     const san1 = parseFloat(birinshiSan);
+//     const san2 = parseFloat(ekinshiSan);
+
+    
+//     if (isNaN(san1) || isNaN(san2)) {
+        
+//         alert("Қате енгізу!");
+//         return;
+//     }
+    
+//     const kosu = san1 + san2;
+//     const alu = san1 - san2;
+//     const kobeytu = san1 * san2;
+//     const bolu = san1 / san2;    
+
+//     alert(kosu);
+//     alert(alu);
+//     alert(kobeytu);
+//     alert(bolu);
+// }
+
+
+// kkk();
+
+
+//tapsyrma2
+function zhenildikko() {
+   
+   const bagasy = prompt("Заттың бағасын енгізіңіз:");
+   const sany = prompt("заттың санын енгізіңіз:");
+
+   const zatBagasy = parseFloat(bagasy);
+   const zatSany = parseInt(sany);
+
+
+
+    const jalpyKun = zatBagasy * zatSany;
+   let zhenildik = 0;
+
+   
+   if (jalpyKun > 20000) {
+       zhenildik = 0.3; 
+   } else if (jalpyKun > 10000) {
+       zhenildik = 0.2; 
+   } else if (jalpyKun > 5000) {
+       zhenildik = 0.1; 
+   }
+
+
+   const zhenildikSomasy = jalpyKun * zhenildik;
+   const songyTolem = jalpyKun - zhenildikSomasy;
+
+   
+   alert(jalpyKun);
+
+   alert(songyTolem);
+}
+
+zhenildikko();
+
+
+    </script>
+</body>
+</html>
